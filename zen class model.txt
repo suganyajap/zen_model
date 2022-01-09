@@ -1,0 +1,186 @@
+
+> use b28wd
+switched to db b28wd
+
+student collection:-
+---------------------
+
+> db.student.insertMany([{
+...          "stud_id": "1",
+...          "student_name": "Shiva",
+...          "email": "shiva@gmail.com",
+...          "course_joined": "Mern_stack_developer"
+...
+...      },
+... {
+...          "stud_id": "2",
+...          "student_name": "Arun",
+...          "email":"arun@gmail.com",
+...          "course_joined": "Data_Science"
+...
+...      },
+...  {
+...          "stud_id": "3",
+...          "student_name": "Sathya",
+...          "email": "sathya@gmail.com",
+...          "course_joined": "java_developer"
+...
+...      },
+...  {
+...          "stud_id": "4",
+...          "student_name": "Priya",
+...          "email": "priya@gmail.com",
+...          "course_joined": "python_developer"
+...
+...      },
+...  {
+...          "stud_id": "5",
+...          "student_name": "Renuka",
+...          "email": "renu@gmail.com",
+...          "course_joined": "cyber_security"
+...
+...      }]
+...  );
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("61da8a72e4f6c32124a51c1e"),
+                ObjectId("61da8a72e4f6c32124a51c1f"),
+                ObjectId("61da8a72e4f6c32124a51c20"),
+                ObjectId("61da8a72e4f6c32124a51c21"),
+                ObjectId("61da8a72e4f6c32124a51c22")
+        ]
+}
+
+..................................................................................................................................................
+
+
+batch collection:-
+------------------
+
+> db.batch.insertMany([{
+
+...          "batch_id": "batch1",
+...          "session": "weekend"
+...
+...      },
+... {
+...          "batch_id": "batch2",
+...          "session": "weekday"
+...
+...      },
+...  {
+...          "batch_id": "batch3",
+...          "session": "weekend"
+...
+...      },
+...  {
+...          "batch_id": "batch4",
+...          "session": "weekday"
+...
+...      },
+...  {
+...          "batch_id": "batch5",
+...          "session": "weekday"
+...
+...
+...      }]);
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("61da8ab0e4f6c32124a51c23"),
+                ObjectId("61da8ab0e4f6c32124a51c24"),
+                ObjectId("61da8ab0e4f6c32124a51c25"),
+                ObjectId("61da8ab0e4f6c32124a51c26"),
+                ObjectId("61da8ab0e4f6c32124a51c27")
+        ]
+}
+...............................................................................................................................
+
+tasks collection:-
+------------------
+
+> db.tasks.insertMany([{
+...          "task_name": "mongodb",
+...          "days_to_complete": 2
+...
+...      },
+... {
+...          "task_name": "nodejs",
+...          "days_to_complete": 5
+...
+...      },
+...  {
+...          "task_name": "javascript",
+...          "days_to_complete": 3
+...
+...      },
+...  {
+...          "task_name": "html",
+...          "days_to_complete":4
+...
+...      },
+...  {
+...          "task_name": "css",
+...          "days_to_complete": 1
+...
+...
+...      }]);
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("61da8b06e4f6c32124a51c28"),
+                ObjectId("61da8b06e4f6c32124a51c29"),
+                ObjectId("61da8b06e4f6c32124a51c2a"),
+                ObjectId("61da8b06e4f6c32124a51c2b"),
+                ObjectId("61da8b06e4f6c32124a51c2c")
+        ]
+}
+
+...................................................................................................................
+
+mentor collection:-
+-------------------
+
+> db.mentor.insertMany([{
+...          "mentor_id": "50",
+...          "mentor_name": "Raghav",
+...          "no_of_stud_assigned": 30
+...
+...
+...      },
+... {
+...          "mentor_id": "51",
+...          "mentor_name": "Krishna",
+...          "no_of_stud_assigned":10
+...
+...      },
+...  {
+...          "mentor_id": "52",
+...          "mentor_name": "Banu",
+...          "no_of_stud_assigned":60
+...
+...      },
+...  {
+...          "mentor_id": "53",
+...          "mentor_name": "Lavis",
+...          "no_of_stud_assigned":35
+...
+...      },
+...  {
+...  "mentor_id": "54",
+...          "mentor_name": "sai mohan",
+...          "no_of_stud_assigned":88
+...
+...      }]);
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("61da8b39e4f6c32124a51c2d"),
+                ObjectId("61da8b39e4f6c32124a51c2e"),
+                ObjectId("61da8b39e4f6c32124a51c2f"),
+                ObjectId("61da8b39e4f6c32124a51c30"),
+                ObjectId("61da8b39e4f6c32124a51c31")
+        ]
+}
+>
